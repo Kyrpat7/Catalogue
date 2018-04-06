@@ -1,0 +1,8 @@
+D:\Projekty\PW\Catalogue\Interfaces\bin\Debug\Interfaces.dll
+D:\Projekty\PW\Catalogue\Interfaces\bin\Debug\Interfaces.pdb
+D:\Projekty\PW\Catalogue\Interfaces\bin\Debug\Core.dll
+D:\Projekty\PW\Catalogue\Interfaces\bin\Debug\Core.pdb
+D:\Projekty\PW\Catalogue\Interfaces\obj\Debug\Interfaces.csprojResolveAssemblyReference.cache
+D:\Projekty\PW\Catalogue\Interfaces\obj\Debug\Interfaces.csproj.CoreCompileInputs.cache
+D:\Projekty\PW\Catalogue\Interfaces\obj\Debug\Interfaces.dll
+D:\Projekty\PW\Catalogue\Interfaces\obj\Debug\Interfaces.pdb

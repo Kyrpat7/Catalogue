@@ -1,0 +1,15 @@
+D:\Projekty\PW\Catalogue\Catalogue\bin\Debug\Catalogue.exe.config
+D:\Projekty\PW\Catalogue\Catalogue\bin\Debug\Catalogue.exe
+D:\Projekty\PW\Catalogue\Catalogue\bin\Debug\Catalogue.pdb
+D:\Projekty\PW\Catalogue\Catalogue\bin\Debug\BL.dll
+D:\Projekty\PW\Catalogue\Catalogue\bin\Debug\Interfaces.dll
+D:\Projekty\PW\Catalogue\Catalogue\bin\Debug\DAO.dll
+D:\Projekty\PW\Catalogue\Catalogue\bin\Debug\Core.dll
+D:\Projekty\PW\Catalogue\Catalogue\bin\Debug\BL.pdb
+D:\Projekty\PW\Catalogue\Catalogue\bin\Debug\Interfaces.pdb
+D:\Projekty\PW\Catalogue\Catalogue\bin\Debug\DAO.pdb
+D:\Projekty\PW\Catalogue\Catalogue\bin\Debug\Core.pdb
+D:\Projekty\PW\Catalogue\Catalogue\obj\Debug\Catalogue.csprojResolveAssemblyReference.cache
+D:\Projekty\PW\Catalogue\Catalogue\obj\Debug\Catalogue.csproj.CoreCompileInputs.cache
+D:\Projekty\PW\Catalogue\Catalogue\obj\Debug\Catalogue.exe
+D:\Projekty\PW\Catalogue\Catalogue\obj\Debug\Catalogue.pdb

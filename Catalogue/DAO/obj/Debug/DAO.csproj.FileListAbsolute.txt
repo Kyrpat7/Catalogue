@@ -1,0 +1,10 @@
+D:\Projekty\PW\Catalogue\DAO\bin\Debug\DAO.dll
+D:\Projekty\PW\Catalogue\DAO\bin\Debug\DAO.pdb
+D:\Projekty\PW\Catalogue\DAO\bin\Debug\Core.dll
+D:\Projekty\PW\Catalogue\DAO\bin\Debug\Interfaces.dll
+D:\Projekty\PW\Catalogue\DAO\bin\Debug\Core.pdb
+D:\Projekty\PW\Catalogue\DAO\bin\Debug\Interfaces.pdb
+D:\Projekty\PW\Catalogue\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+D:\Projekty\PW\Catalogue\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+D:\Projekty\PW\Catalogue\DAO\obj\Debug\DAO.dll
+D:\Projekty\PW\Catalogue\DAO\obj\Debug\DAO.pdb

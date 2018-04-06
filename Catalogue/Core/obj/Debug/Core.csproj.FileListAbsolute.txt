@@ -1,0 +1,6 @@
+D:\Projekty\PW\Catalogue\Core\bin\Debug\Core.dll
+D:\Projekty\PW\Catalogue\Core\bin\Debug\Core.pdb
+D:\Projekty\PW\Catalogue\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+D:\Projekty\PW\Catalogue\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
+D:\Projekty\PW\Catalogue\Core\obj\Debug\Core.dll
+D:\Projekty\PW\Catalogue\Core\obj\Debug\Core.pdb

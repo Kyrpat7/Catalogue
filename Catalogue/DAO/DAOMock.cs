@@ -10,25 +10,25 @@ namespace Stasiewski.Catalogue.DAO
 {
     public class DAOMock : IDAO
     {
-        private List<IProducer> producers;
-        private List<IGraphicCard> cards;
+        private List<IProducer> _producers;
+        private List<IGraphicCard> _cards;
 
         public DAOMock()
         {
-            producers = new List<IProducer>();
-            producers.Add(new Producer { Name = "Testowy", Country = "Mockland", City = "Mock", Street = "Nonexistance" });
+            _producers = new List<IProducer>();
+            _producers.Add(new Producer { Name = "NVIDIA Corporation", Country = "USA", City = "Santa Clara", Street = "San Tomas Expressway" });
 
-            cards = new List<IGraphicCard>();
-            cards.Add(new GraphicCard { Model = "Dosyc szybki", directXSupport = DirectXVersion.DirectX10, Memory = 512, Series = "Dobra seria", Producer = producers[0] });
+            _cards = new List<IGraphicCard>();
+            _cards.Add(new GraphicCard { Model = "GTX 1070 Ti", DirectXSupport = DirectXVersion.DirectX11, Memory = 8192, Series = "Nvidia GeForce", Producer = _producers[0] });
         }
 
         public IEnumerable<IGraphicCard> getProductsDataset()
         {
-            return cards;
+            return _cards;
         }
         public IEnumerable<IProducer> getProducersDataset()
         {
-            return producers;
+            return _producers;
         }
     }
 }

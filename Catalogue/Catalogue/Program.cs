@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using Stasiewski.Catalogue.BL;
+using Catalogue.Properties;
 
 namespace Stasiewski.Catalogue
 {
@@ -12,16 +12,17 @@ namespace Stasiewski.Catalogue
     {
         static void Main(string[] args)
         {
-            Stasiewski.Catalogue.BL.Query q = new Stasiewski.Catalogue.BL.Query();
+            Settings _appSettings = new Settings();
+            Stasiewski.Catalogue.BL.Query _q = new Stasiewski.Catalogue.BL.Query(_appSettings.DAO);
             Console.WriteLine("Producenci");
-            foreach (var p in q.getProducers())
+            foreach (var _p in _q.getProducers())
             {
-                Console.WriteLine(p.Name);
+                Console.WriteLine(_p.Name);
             }
             Console.WriteLine("Produkty");
-            foreach (var p in q.getProducts())
+            foreach (var _p in _q.getProducts())
             {
-                Console.WriteLine(p.Model + " " + p.Series);
+                Console.WriteLine(_p.Model + " " + _p.Series);
             }
         }
     }

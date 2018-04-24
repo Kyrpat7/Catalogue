@@ -10,7 +10,7 @@ namespace Stasiewski.Catalogue.DAO
 {
     public class GraphicCard : IGraphicCard
     {
-        public DirectXVersion directXSupport { get; set; }
+        public DirectXVersion DirectXSupport { get; set; }
         public IProducer Producer { get; set; }
         public string Model { get; set; }
         public string Series { get; set; }

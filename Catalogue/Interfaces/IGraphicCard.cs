@@ -9,7 +9,7 @@ namespace Stasiewski.Catalogue.Interfaces
 {
     public interface IGraphicCard
     {
-        DirectXVersion directXSupport { get; set; }
+        DirectXVersion DirectXSupport { get; set; }
         IProducer Producer { get; set; }
         string Model { get; set; }
         string Series { get; set; }

@@ -1,0 +1,12 @@
+D:\Projekty\PW\Catalogue\BL\bin\Release\BL.dll
+D:\Projekty\PW\Catalogue\BL\bin\Release\BL.pdb
+D:\Projekty\PW\Catalogue\BL\bin\Release\DAO.dll
+D:\Projekty\PW\Catalogue\BL\bin\Release\Interfaces.dll
+D:\Projekty\PW\Catalogue\BL\bin\Release\Core.dll
+D:\Projekty\PW\Catalogue\BL\bin\Release\DAO.pdb
+D:\Projekty\PW\Catalogue\BL\bin\Release\Interfaces.pdb
+D:\Projekty\PW\Catalogue\BL\bin\Release\Core.pdb
+D:\Projekty\PW\Catalogue\BL\obj\Release\BL.csprojResolveAssemblyReference.cache
+D:\Projekty\PW\Catalogue\BL\obj\Release\BL.csproj.CoreCompileInputs.cache
+D:\Projekty\PW\Catalogue\BL\obj\Release\BL.dll
+D:\Projekty\PW\Catalogue\BL\obj\Release\BL.pdb

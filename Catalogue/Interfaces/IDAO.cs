@@ -10,5 +10,7 @@ namespace Stasiewski.Catalogue.Interfaces
     {
         IEnumerable<IGraphicCard> getProductsDataset();
         IEnumerable<IProducer> getProducersDataset();
+        IGraphicCard CreateNewProduct();
+        IProducer CreateNewProducer();
     }
 }

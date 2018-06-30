@@ -20,6 +20,7 @@ namespace Stasiewski.Catalogue.DAO
 
             _cards = new List<IGraphicCard>();
             _cards.Add(new GraphicCard { Model = "GTX 1070 Ti", DirectXSupport = DirectXVersion.DirectX11, Memory = 8192, Series = "Nvidia GeForce", Producer = _producers[0] });
+            _cards.Add(new GraphicCard { Model = "GTX 1050", DirectXSupport = DirectXVersion.DirectX11, Memory = 2048, Series = "Nvidia GeForce", Producer = _producers[0] });
         }
 
         public IEnumerable<IGraphicCard> getProductsDataset()
@@ -29,6 +30,20 @@ namespace Stasiewski.Catalogue.DAO
         public IEnumerable<IProducer> getProducersDataset()
         {
             return _producers;
+        }
+
+        public IGraphicCard CreateNewProduct()
+        {
+            IGraphicCard _new = new GraphicCard();
+            _cards.Add(_new);
+            return _new;
+        }
+
+        public IProducer CreateNewProducer()
+        {
+            IProducer _new = new Producer();
+            _producers.Add(_new);
+            return _new;
         }
     }
 }

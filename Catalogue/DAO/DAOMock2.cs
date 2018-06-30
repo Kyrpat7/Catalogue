@@ -30,5 +30,17 @@ namespace Stasiewski.Catalogue.DAO
         {
             return _producers;
         }
+
+        public IGraphicCard CreateNewProduct()
+        {
+            IGraphicCard _new = new GraphicCard();
+            return _new;
+        }
+
+        public IProducer CreateNewProducer()
+        {
+            IProducer _new = new Producer();
+            return _new;
+        }
     }
 }

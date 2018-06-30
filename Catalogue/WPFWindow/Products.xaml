@@ -1,0 +1,102 @@
+﻿<Window x:Class="Stasiewski.Catalogue.WPFWindow.Products"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Stasiewski.Catalogue.WPFWindow"
+        xmlns:System="clr-namespace:System;assembly=mscorlib"
+        xmlns:StyleAlias="clr-namespace:Stasiewski.Catalogue.Core;assembly=Core"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="625">
+    <Window.Resources>
+        <ObjectDataProvider x:Key="dataFromEnum" MethodName="GetValues"
+                            ObjectType="{x:Type System:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="StyleAlias:DirectXVersion"/>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="Validation.ErrorTemplate">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <DockPanel LastChildFill="True">
+                            <ListBox DockPanel.Dock="Bottom" Name="lstErrors"
+                                     ItemsSource="{Binding ElementName=ErrTextBox,Path=AdornedElement.(Validation.Errors)}">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding ErrorContent}" Foreground="Red"/>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                            <Grid DockPanel.Dock="Left">
+                                <Ellipse Width="20" Height="20" Stroke="DarkRed" Fill="DarkRed"/>
+                                <Label Content="{Binding ElementName=ErrTextBox, Path=AdornedElement.(Validation.Errors).Count}" 
+                                       Foreground="White"/>
+                            </Grid>
+                            <Border BorderBrush="Red">
+                                <AdornedElementPlaceholder Name="ErrTextBox" />
+                            </Border>
+                        </DockPanel>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Control.MinWidth" Value="100"/>
+            <Style.Triggers>
+                <Trigger Property="Validation.HasError" Value="True">
+                    <Setter Property="Control.Margin" Value="20 2 2 70"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Window.DataContext>
+        <local:GraphicCardListViewModel/>
+    </Window.DataContext>
+    <DockPanel LastChildFill="True">
+        <ListBox DockPanel.Dock="Left" Name="lstBox" ItemsSource="{Binding Cards}" SelectedItem="{Binding EditedCard}"   >
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="{Binding Model}" MinWidth="30"/>
+                        <Label Content="{Binding Series}" MinWidth="70"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal">
+            <Button Command="{Binding FilterCommand}">Filter</Button>
+            <TextBox MinWidth="80" Text="{Binding FilterString,Mode=TwoWay}"></TextBox>
+            <Button Command="{Binding CreateNewCardCommand}">Create new graphic card</Button>
+        </StackPanel>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" DataContext="{Binding EditedCard}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0">Model</Label>
+                <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Model, ValidatesOnNotifyDataErrors=True}" MinWidth="100"></TextBox>
+                <Label Grid.Row="1">Series</Label>
+                <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Series, ValidatesOnNotifyDataErrors=True}"  MinWidth="100"></TextBox>
+                <Label Grid.Row="2">Memory</Label>
+                <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Memory, ValidatesOnNotifyDataErrors=True}"  MinWidth="100"></TextBox>
+                <Label Grid.Row="3">DirectXSupport</Label>
+                <ComboBox Grid.Row="3" Grid.Column="1" ItemsSource="{Binding Source={StaticResource dataFromEnum}}" SelectedItem="{Binding DirectXSupport}" />
+                <Label Grid.Row="4">Producer</Label>
+                <ComboBox Grid.Row="4" Grid.Column="1" ItemsSource="{Binding Producers}" DisplayMemberPath="Name" SelectedItem="{Binding Producer,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+            </Grid>
+        </Grid>
+    </DockPanel>
+</Window>

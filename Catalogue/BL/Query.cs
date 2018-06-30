@@ -61,5 +61,15 @@ namespace Stasiewski.Catalogue.BL
             }
             return _dao.getProductsDataset();
         }
+
+        public IGraphicCard CreateNewProduct()
+        {
+            return _dao.CreateNewProduct();
+        }
+
+        public IProducer CreateNewProducer()
+        {
+            return _dao.CreateNewProducer();
+        }
     }
 }

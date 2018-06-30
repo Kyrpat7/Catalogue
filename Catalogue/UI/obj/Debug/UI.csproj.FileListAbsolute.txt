@@ -1,6 +1,5 @@
 D:\Projekty\PW\Catalogue\UI\bin\Debug\UI.dll
 D:\Projekty\PW\Catalogue\UI\bin\Debug\UI.pdb
-D:\Projekty\PW\Catalogue\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
 D:\Projekty\PW\Catalogue\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
 D:\Projekty\PW\Catalogue\UI\obj\Debug\UI.dll
 D:\Projekty\PW\Catalogue\UI\obj\Debug\UI.pdb
